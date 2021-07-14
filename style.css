@@ -1,0 +1,166 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    background-color: white;
+}
+
+
+/* -----common-styles or utilities-- */
+
+.top-banner {
+    background-color: rgb(23, 72, 218);
+}
+
+section {
+    display: flex;
+    margin-top: 20px;
+}
+
+.color {
+    color: white;
+}
+
+.half-width {
+    width: 80%;
+    height: 50%;
+    padding-left: 2%;
+}
+
+.half-width img {
+    width: 80%;
+    height: 50%;
+    padding-left: 2%;
+}
+
+.link-button {
+    text-decoration: none;
+    background-color: #E02C6D;
+    font-size: small;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+
+/* ---blogs-style---- */
+
+.blog .thambnail img {
+    width: 280px;
+    height: 180px;
+}
+
+.Blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    font-size: 10px;
+}
+
+.blog {
+    box-shadow: 2px 2px 5px silver;
+    box-sizing: border-box;
+    width: 80%;
+    padding-left: 4%;
+    padding-right: 2%;
+    font-size: small;
+}
+
+.copa-winner {
+    font-size: medium;
+    color: royalblue;
+}
+
+.watch-match img {
+    width: 60%;
+    height: 50%;
+    padding-left: 5%;
+}
+
+.watch-match {
+    width: 50%;
+    height: 50%;
+    padding-left: 5%;
+}
+
+.logo-img {
+    width: 40%;
+    height: 60%;
+    padding-left: 30%;
+}
+
+.logo {
+    margin-top: 100px;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    height: 50px;
+    width: 20px;
+    margin-left: 2%;
+    padding-left: 35%;
+    justify-content: space-between;
+}
+
+.fa-instagram {
+    color: purple;
+}
+
+.fa-futbol {
+    color: rgb(89, 89, 248);
+}
+
+.fa-twitter {
+    color: skyblue;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.footer-style {
+    padding-left: 35%;
+    font-size: small;
+}
+
+
+/* -----media Queries for mobile--- */
+
+@media only screen and(max-width:600px) {
+    .top-banner {
+        box-sizing: border-box;
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .Blogs,
+    .blog,
+    .thambnail {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1fr 1fr 1fr 1fr;
+        margin: 30px auto;
+    }
+    .winner-team {
+        box-sizing: border-box;
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .winning-img {
+        width: 50%;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .bottom {
+        box-sizing: border-box;
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+}
